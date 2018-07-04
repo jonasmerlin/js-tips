@@ -8,7 +8,11 @@ These tips come from many different places and I will document their sources whe
 ## Logging
 
 Wrapping console.log arguments in an object lieteral will print the variable name along with its value.
-'''console.log(variableToLog)'''
-'''console.log({ variableToLog })'''
+
+```console.log(variableToLog)```
+
+becomes
+
+```console.log({ variableToLog })```
 
 Source: https://twitter.com/DaniStefanovic/status/1011923716085821440
