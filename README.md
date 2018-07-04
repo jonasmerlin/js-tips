@@ -40,3 +40,27 @@ console.table([{ isThisRealLife, year, til }])
 
 Source: https://twitter.com/ThomasG77/status/798598482894295040
 
+### Array.from() map argument
+
+Source: https://twitter.com/wesbos/status/993883756162404354
+
+### Quickly create an Array of n items
+
+```[...Array(10).keys()]```
+
+Source: https://twitter.com/loganmcansh/status/993888332911345664
+
+This does the same but wothout the spread operator:
+
+```Array.from(Array(10).keys())```
+
+Source: https://twitter.com/TBSTwriter/status/993893504567988224
+
+And if you don't need the different values:
+
+```Array(10).fill(0)```
+
+Source: https://twitter.com/coderitual/status/994296693616267265
+
+
+
