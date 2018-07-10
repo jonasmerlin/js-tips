@@ -62,5 +62,43 @@ And if you don't need the different values:
 
 Source: https://twitter.com/coderitual/status/994296693616267265
 
+### Largest Array Element
 
+```Math.max(...arrayWithMaxElement)```
 
+Source: https://twitter.com/DaniStefanovic/status/904597389121597442
+
+Without spread operator (and seemingly faster in node):
+
+```arrayWithMaxElement.reduce((a, b) => Math.max(a, b), 0)```
+
+Source: https://twitter.com/gpmcadam/status/904626736767389696
+
+And more concise:
+
+```Math.max.apply(Math, myArray)```
+
+Source: https://twitter.com/mryall/status/904671614658281473
+
+### Eliminate Duplciates from an Array
+
+```
+const arr = [1, 2, 3, 3, 4];
+[...new Set(arr)];
+```
+
+Source: https://twitter.com/DaniStefanovic/status/828499976745545728
+
+### Enforcing Mandatory Parameters with Default Values
+
+```
+function mandatory() {
+    throw new Error('Missing parameter');
+}
+
+function foo(mustBeProvided = mandatory()) {
+    return mustBeProvided;
+}
+```
+
+Source: http://2ality.com/2016/05/six-nifty-es6-tricks.html
